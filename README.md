@@ -23,10 +23,11 @@
 | **[SwiftDrop](https://github.com/ShivamHimatsingka/SwiftDrop)** | AirDrop-style file sharing across **Mac, iPhone, Android & Windows** (LocalSend v2 compatible). | Apple peer-to-peer Wi-Fi (**AWDL**, ~40 MB/s), **BLE wake-up** for locked iPhones, TLS-encrypted disk streaming. |
 | **[Conduit](https://github.com/ShivamHimatsingka/conduit)** | Free, open-source virtual audio router and mixer for macOS: a 16-channel virtual device plus a menu-bar mixer. | Custom Core Audio driver, per-app capture via **Core Audio Process Taps**, routing matrix, 60 fps meters with FFT spectrum at ~0.2% of one core, real-time-safe audio path. |
 | **[Chromesthesia](https://github.com/ShivamHimatsingka/Chromesthesia)** | Real-time synesthetic visuals for music production: audio in, GPU fluid and HDR light out. | Chord, key, tempo and mood analysis from FFTs, a WebGL2 fluid sim with ~1M particles, and a native Swift audio sender at ~3.5% of one core. |
+| **Plugin Lens** | Native macOS app that lists every plugin a Logic Pro project uses, with the version it was saved with vs. what's installed. | Swift + SwiftUI, no dependencies. Reverse-engineered Logic's undocumented project format, matches plugins by Audio Unit codes, read-only and offline. *(private repo)* |
 | **[Meterbar](https://github.com/ShivamHimatsingka/Meterbar)** | macOS menu bar system monitor: CPU, GPU, RAM, SMC temps, disk, network, battery. | **~12 MB RAM**, **0.3% CPU**, a 0.4 MB single-file Swift/AppKit binary. |
 | **[FiveK](https://github.com/ShivamHimatsingka/FiveK)** | Turns a 27" 5K iMac into a true **5120×2880** wireless extended display. | Hardware HEVC (`ScreenCaptureKit` + `VideoToolbox`), **zero idle overhead** via `launchd` socket activation, 120 Hz cursor. |
 | **[MIDI Footcontroller](https://github.com/ShivamHimatsingka/MIDI_Footcontroller_Arduino_ProMicro)** | Driver-free 8-button USB MIDI foot controller for guitar rigs and DAWs. | Class-compliant USB MIDI on **ATmega32U4** with hardware debounce and configurable PC/CC messages. |
-| **[Graphical Calculator](https://github.com/ShivamHimatsingka/Graphical-Calculator)** | Fast, Desmos-inspired desktop graphing calculator. | **PySide6**, **PyQtGraph**, **NumPy**, **SymPy**; synced variable sliders and live curve tracking. |
+| **[Graphical Calculator](https://github.com/ShivamHimatsingka/Graphical-Calculator)** ([live](https://shivamhimatsingka.github.io/Graphical-Calculator/)) | Desmos-style graphing calculator that runs in your browser, plus a native Python desktop edition. | 2D and 3D graphing, complex domain colouring, geometry and matrix modes, regression, a built-in **Ask** solver, and sliders with animation. Web in plain HTML/CSS/JS; desktop in **PySide6**, **PyQtGraph**, **NumPy**, **SymPy**. |
 
 ---
 
@@ -35,7 +36,7 @@
 - **Apple / Systems:** Swift, AppKit, SwiftUI, ScreenCaptureKit, VideoToolbox, Core Audio (HAL drivers, Process Taps), Accelerate, CoreGraphics, IOKit / SMC, launchd
 - **Cross-platform & networking:** Kotlin (Jetpack Compose), .NET 8 / C#, Bluetooth LE, AWDL / Wi-Fi Direct, TLS
 - **Graphics & audio:** WebGL2, GLSL, FFT-based audio analysis, MIDI
-- **Embedded & scientific:** C++ (Arduino / ATmega32U4), Python (NumPy, SymPy, PySide6)
+- **Embedded & scientific:** C++ (Arduino / ATmega32U4), Python (NumPy, SymPy, PySide6), plain HTML/CSS/JS
 
 ---
 
